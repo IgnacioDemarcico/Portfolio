@@ -1,0 +1,8 @@
+.nav{
+    background-color: rgb(0, 0, 0);
+    --bs-nav-link-hover-color:aliceblue;
+    --bs-nav-link-color: aliceblue;
+    font-size: larger;
+    text-decoration: none;
+    justify-content:end
+}
