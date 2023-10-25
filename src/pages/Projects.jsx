@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
-import Card from "../Components/Card"
-import DB from '../services/DB'
+import Card from '../components/Card'
+import DB from '../services/db'
 
 export default function Projects() {
 
@@ -12,11 +12,11 @@ export default function Projects() {
 
     return (
         <div>
-            <h2 className='text'>Página de creaciones</h2>
+            <h2 className='text'>Página de Catálogo</h2>
             <p className='text'>Aquí puedes mostrar el contenido específico de tu catálogo de productos.</p>
-            <section className='lista-creaciones'>
+            <section className='lista-figuras'>
                 {
-                    creaciones?.map((creacion, index) => <Card key={index} creacion={creacion} /> )
+                    creaciones?.map((creacion, index) => <Item key={index} creacion={creacion} /> )
                 }
             </section>
         </div>
