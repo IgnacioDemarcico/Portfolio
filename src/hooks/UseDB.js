@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:3004'
+const API_URL = 'http://localhost:3000'
 
 export default async function useDB(endpoint) {
     try {
