@@ -1,22 +1,22 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import	'./styles/Item.css';
+import './styles/Item.css';
 
-function Item({creacion}) {
+function Item({ creacion }) {
   return (
-      <div className='card-container'>
-    <Card className='card'>
-      <Card.Img className='card-image'src='/images/default_image.png'/>
+    <div className='card-container'>
+      <Card>
+        <Card.Img className='card-image' src='/images/default_image.png' />
         {/*</Card.Img>{creacion.img}*/}
-      <Card.Body>
-        <Card.Title>{creacion.titulo}</Card.Title>
-        <Card.Text>
-          {creacion.descripcion}
-        </Card.Text>
-        <Button variant="primary">Ver en GitHub</Button>
-      </Card.Body>
-    </Card>
-      </div>
+        <Card.Body className='card-body'>
+          <Card.Title style={{display:'flex',justifyContent:'center'}}>{creacion.titulo}</Card.Title>
+          <Card.Text>
+            {creacion.descripcion}
+          </Card.Text>
+          <Button className='card-button' variant="primary" target='blank' href='https://campus.ort.edu.ar/secundaria/almagro/informatica/tp/2014957/tp-10-portfolio'>View on GitHub</Button>
+        </Card.Body>
+      </Card>
+    </div>
   );
 }
 
