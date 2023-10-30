@@ -1,17 +1,18 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import	'./styles/Footer.css';
 
-function Item({creaciones}) {
+function Item({creacion}) {
   return (
-    <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="holder.js/100px180" />
+    <Card className='card' style={{ width: '18rem' }}>
+      <Card.Img variant="top"/>
+      {creacion.img}
       <Card.Body>
-        <Card.Title>{creaciones}</Card.Title>
+        <Card.Title>{creacion.titulo}</Card.Title>
         <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+          {creacion.descripcion}
         </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
+        <Button variant="primary">Ver en GitHub</Button>
       </Card.Body>
     </Card>
   );
