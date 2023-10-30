@@ -1,5 +1,16 @@
-.card{
+
+.card-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .card-image {
+    width: 30%;
     display: flex;
     justify-content: center;
-    align-items: center;
-}
+    align-items: center;    
+  }
+  
+  

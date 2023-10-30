@@ -1,12 +1,13 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import	'./styles/Footer.css';
+import	'./styles/Item.css';
 
 function Item({creacion}) {
   return (
-    <Card className='card' style={{ width: '18rem' }}>
-      <Card.Img variant="top"/>
-      {creacion.img}
+      <div className='card-container'>
+    <Card className='card'>
+      <Card.Img className='card-image'src='/images/default_image.png'/>
+        {/*</Card.Img>{creacion.img}*/}
       <Card.Body>
         <Card.Title>{creacion.titulo}</Card.Title>
         <Card.Text>
@@ -15,6 +16,7 @@ function Item({creacion}) {
         <Button variant="primary">Ver en GitHub</Button>
       </Card.Body>
     </Card>
+      </div>
   );
 }
 
