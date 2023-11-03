@@ -1,28 +1,23 @@
-// Modal.js
+// CustomModal.js
 import React from 'react';
-import Modal from 'react-modal';
-
-const customStyles = {
-  overlay: {
-    backgroundColor: 'rgba(0, 0, 0, 0.5)',
-  },
-  content: {
-    width: '60%',
-    margin: 'auto',
-  },
-};
+import Modal from 'react-bootstrap/Modal';
+import Button from 'react-bootstrap/Button';
 
 function DetailsModal({ isOpen, closeModal, creacion }) {
   return (
-    <Modal
-      isOpen={isOpen}
-      onRequestClose={closeModal}
-      style={customStyles}
-      contentLabel="Detalles del Elemento"
-    >
-      <h2>Detalles del Elemento</h2>
-      <p>{creacion.descripcion}</p>
-      <button onClick={closeModal}>Cerrar</button>
+    <Modal show={isOpen} onHide={closeModal}>
+      <Modal.Header closeButton>
+        <Modal.Title>Project details</Modal.Title>
+      </Modal.Header>
+      <Modal.Body>
+        <p>{creacion.descripcion}</p>
+        {/* Otros detalles que desees mostrar */}
+      </Modal.Body>
+      <Modal.Footer>
+        <Button variant="secondary" onClick={closeModal}>
+          Cerrar
+        </Button>
+      </Modal.Footer>
     </Modal>
   );
 }

@@ -6,9 +6,11 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import DetailsModal from './DetailsModal'; // Importa el componente Modal
 import './styles/Item.css';
 
+
+
 function Item({ creacion, abrirModal }) {
   const [isFavorite, setIsFavorite] = useState(false);
-  const [isModalOpen, setIsModalOpen] = useState(false); // Nuevo estado para controlar el modal
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const toggleFavorite = () => {
     setIsFavorite(!isFavorite);
@@ -33,9 +35,6 @@ function Item({ creacion, abrirModal }) {
         <Card.Img className='card-image' src='/images/default_image.png' />
         <Card.Body className='card-body'>
           <Card.Title style={{ display: 'flex', justifyContent: 'center' }}>{creacion.titulo}</Card.Title>
-          <Card.Text>
-            {creacion.descripcion}
-          </Card.Text>
           <div className='botones'>
             <Button className='card-button' variant="primary" target='blank' href='https://campus.ort.edu.ar/secundaria/almagro/informatica/tp/2014957/tp-10-portfolio'>View on GitHub</Button>
             <Button className='card-button' variant="primary" onClick={openModal}>Details</Button>
