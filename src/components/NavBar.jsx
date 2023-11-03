@@ -6,13 +6,13 @@ function BasicExample() {
   return (
     <Nav className='nav'activeKey="/home" onSelect={(selectedKey) => alert(`selected ${selectedKey}`)}>
         <Nav.Item className='items'>
-        <Nav.Link as={Link} to="/favorites">Favoritos</Nav.Link>
+        <Nav.Link as={Link} to="/favorites">Favorites</Nav.Link>
         </Nav.Item>
         <Nav.Item className='items'>
-            <Nav.Link as={Link} to="/Projects">Mis Creaciones</Nav.Link>
+            <Nav.Link as={Link} to="/Projects">My Projects</Nav.Link>
         </Nav.Item>
         <Nav.Item className='items'>
-            <Nav.Link as={Link} to="/information">Yo</Nav.Link>
+            <Nav.Link as={Link} to="/information">Me</Nav.Link>
         </Nav.Item>
         <Nav.Item className='home'>
             <Nav.Link as={Link} to="/">IGNACIO DEMARCIO</Nav.Link>
