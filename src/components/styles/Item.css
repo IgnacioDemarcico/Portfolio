@@ -26,5 +26,8 @@ margin-right: 10px ;
     z-index: 1; /* Asegura que el icono esté en la parte superior de la imagen */
     background:none;
   }
-  
-  
+.overlay {
+    background-color: 'rgba(0, 0, 0, 0.5)';
+    z-index: 9999;
+    
+  }
