@@ -9,6 +9,7 @@ function Item({ creacion }, props) {
   const [isFavorite, setIsFavorite] = useState(false);
 
   const toggleFavorite = () => {
+    
     setIsFavorite(!isFavorite);
   };
 
@@ -16,7 +17,7 @@ function Item({ creacion }, props) {
     <div className='card-container'>
       <Card>
         <div className="icon-container">
-          <button style={{ border: 'none' }} onClick={toggleFavorite}>
+          <button style={{ border: 'none', color:'HotPink'  }} onClick={toggleFavorite}>
             {isFavorite ? <FavoriteIcon /> : <FavoriteBorderIcon />}
           </button>
         </div>

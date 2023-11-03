@@ -24,6 +24,7 @@ margin-right: 10px ;
     top: 10px;
     right: 10px;
     z-index: 1; /* Asegura que el icono esté en la parte superior de la imagen */
+    background:none;
   }
   
   
