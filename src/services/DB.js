@@ -1,4 +1,4 @@
-import UseDB from "../hooks/UseDB"
+import UseDB,{setFavoritos} from "../hooks/UseDB"
 
 export default class DB {
     async getCreaciones() {
@@ -6,5 +6,8 @@ export default class DB {
     }
     async getDestacados() {
         return await UseDB('/creaciones?destacado=true')
+    }
+    async setFavoritos(creacion){
+        return await setFavoritos(creacion)
     }
 }

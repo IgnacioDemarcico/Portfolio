@@ -25,7 +25,7 @@ export default function Projects(props) {
 
     return (
         <div>
-            <h2 className='text'>Página de Catálogo</h2>
+            <h2 className='text' style={{textAlign:'center'}}>Projects page</h2>
             <p className='text'>Aquí puedes mostrar el contenido específico de tu catálogo de productos.</p>
             <section className='lista-items'>
                 {
