@@ -1,17 +1,30 @@
 .nav{
-    background-color: rgb(0, 0, 0);
     display: flex;
     flex-direction: row-reverse;
-    --bs-nav-link-hover-color:aliceblue;
-    --bs-nav-link-color: aliceblue;  
+    --bs-nav-link-hover-color:#333;
+    --bs-nav-link-color: #333; 
     text-decoration: none;
+    background-color: rgb(243, 189, 53);
+    text-decoration: none; /* Eliminar el subrayado */
+    color: #333; /* Cambiar el color del texto */   /* Eliminar el subrayado y cambiar el color de los enlaces en la navbar */
 }
 .home{
     display: flex;
     flex: auto;
-    font-size: medium;
+    font-size: larger;
     align-items: center;
+    color: #333;
+    font-weight: bolder;
 }
 .items{
     font-size: larger;
+    font-weight: bolder;
+    text-decoration: none; /* Eliminar el subrayado */
+    color: black;/* Cambiar el color del texto */
 }
+
+.link{
+    
+    font-size:large;
+}
+

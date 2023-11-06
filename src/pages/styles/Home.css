@@ -1,0 +1,27 @@
+.texto-animado {
+    font-size: 5rem;
+    font-family: Arial, sans-serif;
+    transform: scale(0); /* Inicia con escala 0 */
+    animation: scale-in 1s ease-in-out forwards;
+}
+.text {
+    font-size: 3rem;
+    color: rgb(243, 189, 53);
+    text-align: center;
+    padding: 3rem;
+    font-family: 'StarJedi';
+    text-align: justify;
+}
+
+.title {
+    font-size: 5rem;
+    color: rgb(243, 189, 53);
+    text-align: center;
+    padding: 3rem;
+    font-family: 'StarJedi';
+}
+
+@keyframes scale-in {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
