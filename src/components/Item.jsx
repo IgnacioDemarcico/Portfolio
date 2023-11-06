@@ -15,7 +15,6 @@ function Item({ creacion, abrirModal }) {
 
   const toggleFavorite = async () => {
     setIsFavorite(!isFavorite);
-    
     await setFavoritos(creacion.id,!isFavorite)
   };
 
@@ -31,16 +30,16 @@ function Item({ creacion, abrirModal }) {
     <div className='card-container'>
       <Card style={{borderColor:'rgb(243, 189, 53)'}}>
         <div className="icon-container" style={{zIndex: '0'}}>
-          <button style={{ border: 'none', color: 'HotPink' }} onClick={toggleFavorite}>
+          <button style={{ border: 'none', color: 'HotPink', background:'none' }} onClick={toggleFavorite}>
             {isFavorite ? <FavoriteIcon /> : <FavoriteBorderIcon />}
           </button>
         </div>
         <Card.Img className='card-image' src='/images/default_image.png' />
         <Card.Body className='card-body' style={{}}>
-          <Card.Title style={{ display: 'flex', justifyContent: 'center' }}>{creacion.titulo}</Card.Title>
+          <Card.Title style={{ display: 'flex', justifyContent: 'center',fontWeight:'bolder' }}>{creacion.titulo}</Card.Title>
           <div className='botones'>
-            <Button className='card-button' variant="primary" target='blank' href='https://campus.ort.edu.ar/secundaria/almagro/informatica/tp/2014957/tp-10-portfolio'>View on GitHub</Button>
-            <Button className='card-button' variant="primary" onClick={openModal}>Details</Button>
+            <Button style={{backgroundColor:'black',borderColor:'black'}} className='card-button' variant="primary" target='blank' href='https://campus.ort.edu.ar/secundaria/almagro/informatica/tp/2014957/tp-10-portfolio'>View on GitHub</Button>
+            <Button  style={{backgroundColor:'black',borderColor:'black'}}className='card-button' variant="primary" onClick={openModal}>Details</Button>
           </div>
         </Card.Body>
       </Card>

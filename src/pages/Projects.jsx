@@ -26,7 +26,7 @@ export default function Projects(props) {
     return (
         <div>
             <h2 className='text' style={{textAlign:'center'}}>Projects page</h2>
-            <p className='text'>Aquí puedes mostrar el contenido específico de tu catálogo de productos.</p>
+            <p className='text' style={{textAlign:'center'}}>Here there are some of my projects</p>
             <section className='lista-items'>
                 {
                     creaciones?.map((creacion, index) => <Item key={index} creacion={creacion} abrirModal={abrirModal}/>)
