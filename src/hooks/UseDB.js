@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:3000'
+const API_URL = 'http://localhost:300'
 
 export default async function useDB(endpoint) {
     try {
@@ -11,7 +11,7 @@ export default async function useDB(endpoint) {
 }
 export async function setFavoritos(id,creacion){
     try {
-        const response = await fetch(`${API_URL}/creaciones/${id}`,{method:"put", mode: 'cors', body:JSON.stringify({creacion})})
+        const response = await fetch(`${API_URL}/creaciones/${id}`,{method:"put", headers: { "Content-Type": "application/json" }, body:JSON.stringify(creacion)})
         return await response.json()
     }
     catch (error) {

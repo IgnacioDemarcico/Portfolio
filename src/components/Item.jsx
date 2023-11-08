@@ -14,7 +14,9 @@ function Item({ creacion, abrirModal }) {
   const toggleFavorite = async () => {
     const newFavoriteValue = !isFavorite;
     setIsFavorite(newFavoriteValue);
-    await setFavoritos(creacion.id, newFavoriteValue);
+    const newCreacion = creacion;
+    newCreacion['destacado'] = newFavoriteValue;
+    await setFavoritos(creacion.id, newCreacion);
   };
 
   const openModal = () => {
