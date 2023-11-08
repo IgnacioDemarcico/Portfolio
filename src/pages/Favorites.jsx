@@ -13,8 +13,8 @@ export default function Favorites() {
 
     return (
         <div>
-            <h2 className='text'>Página de Catálogo</h2>
-            <p className='text'>Aquí puedes mostrar el contenido específico de tu catálogo de productos.</p>
+            <h2 className='text'>Favorites page</h2>
+            <p className='text'>Here there are the destacated projects</p>
             <section className='lista-items'>
                 {
                     destacados?.map((creacion, index) => <Item key={index} creacion={creacion} /> )
